@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/origin.css" />
 	</head>
 	<body class="is-preload">
 
@@ -17,9 +18,6 @@
 			<header>
 				<h1>Hiroto Kato's Portfolio</h1>
 			</header>
-			<!-- <footer>
-				<a href="#first" class="button scrolly">Proceed to second phase</a>
-			</footer> -->
 		</section>
 
 		<section id="first" class="main">
@@ -28,12 +26,10 @@
 					<h2>プロフィール</h2>
 					<div class = "row">
 						<div class="col-4 col-12-narrow">
-							<section>
+							<p><a href="#" class="image">
 								<img src="images/profile.png" alt="" />
-							</section>
+							</a></p>
 						</div>
-						<!-- <div class="col-1 col-12-narrow">
-						</div> -->
 						<div class="col-7 col-12-narrow">
 							<section>
 								<p style="text-align: left">
@@ -54,115 +50,80 @@
 		
 		<section id="second" class="main">
 			<div class="content dark style1 featured">
-				<div class="container">
+				<div id ="siema" class="container">
 					<h2>制作物</h2>
+					<div class="siema">
+
+						<div style="margin-bottom: 70px">
+							<h3>TMU -The Maze of Underground-</h3>
+							<p>	2015年冬～2016年春にかけて制作した一人称視点ホラーゲームです。<br>
+								迷路状のマップは毎回ランダムに自動生成されます。<br>
+								コミックマーケット94に出展しました。</p>
+							<div class="movie-wrap">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/wLN2egdXK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div style="margin-bottom: 70px">
+							<h3>TMU -The Maze of Underground-</h3>
+							<p>	2015年冬～2016年春にかけて制作した一人称視点ホラーゲームです。<br>
+								迷路状のマップは毎回ランダムに自動生成されます。<br>
+								コミックマーケット94に出展しました。</p>
+							<div class="movie-wrap">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/wLN2egdXK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div style="margin-bottom: 70px">
+							<h3>TMU -The Maze of Underground-</h3>
+							<p>	2015年冬～2016年春にかけて制作した一人称視点ホラーゲームです。<br>
+								迷路状のマップは毎回ランダムに自動生成されます。<br>
+								コミックマーケット94に出展しました。</p>
+							<div class="movie-wrap">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/wLN2egdXK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div style="margin-bottom: 70px">
+							<h3>TMU -The Maze of Underground-</h3>
+							<p>	2015年冬～2016年春にかけて制作した一人称視点ホラーゲームです。<br>
+								迷路状のマップは毎回ランダムに自動生成されます。<br>
+								コミックマーケット94に出展しました。</p>
+							<div class="movie-wrap">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/wLN2egdXK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+
+						<div style="margin-bottom: 70px">
+							<h3>TMU -The Maze of Underground-</h3>
+							<p>	2015年冬～2016年春にかけて制作した一人称視点ホラーゲームです。<br>
+								迷路状のマップは毎回ランダムに自動生成されます。<br>
+								コミックマーケット94に出展しました。</p>
+							<div class="movie-wrap">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/wLN2egdXK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
+			<script src="assets/js/siema.min.js"></script>
+			<script>
+				const mySiema = new Siema();
+				const items = ["ArioKart", "TMU", "DollyRun", "AddliBlocks", "KeyClickFarmer"];
+				Siema.prototype.addPagination = function() {
+					for (let i = 0; i < this.innerElements.length; i++) {
+						const btn = document.createElement('button');
+						btn.textContent = items[i];
+						btn.style.width = "170px";
+						btn.addEventListener('click', () => this.goTo(i));
+						this.selector.appendChild(btn);
+					}
+				}
+				// Trigger pagination creator
+				mySiema.addPagination();
+			</script>
 		</section>
 		
-		<section id="second" class="main">
-			<div class="content featured">
-				<div class="container">
-					<h3>TMU -The Maze of Underground-</h3>
-					<p>	2015年冬～2016年春にかけて制作した一人称視点ホラーゲームです。<br>
-						迷路状のマップは毎回ランダムに自動生成されます。<br>
-						コミックマーケット94に出展しました。</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/wLN2egdXK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
-			</div>
-		</section>
-
-		<section id="second" class="main">
-			<div class="content dark style3 featured">
-				<div class="container">
-					<h3>TMU -The Maze of Underground-</h3>
-					<p>	2015年冬～2016年春にかけて制作した一人称視点ホラーゲームです。<br>
-						迷路状のマップは毎回ランダムに自動生成されます。<br>
-						コミックマーケット94に出展しました。</p>
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/wLN2egdXK6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					<!-- <div class = "row">
-						<div class="col-4 col-12-narrow">
-							<section>
-								<span class="feature-icon"><span class="icon fa-clock-o"></span></span>
-								<header>
-									<h3>Gravida</h3>
-								</header>
-								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-								Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-								ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus.</p>
-							</section>
-						</div>
-						<div class="col-8 col-12-narrow">
-							<section>
-								<span class="feature-icon"><span class="icon fa-bolt"></span></span>
-								<header>
-									<h3>Vivamus</h3>
-								</header>
-								<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales.
-								Diam tempor dui lacinia accumsan vivamus. Gravida dis placerat lectus
-								ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-								accumsan vivamus.</p>
-							</section>
-						</div>
-					</div> -->
-				</div>
-			</div>
-		</section>
-
-		<!-- Second -->
-			<!-- <section id="tenth" class="main">
-				<div class="content dark style2">
-					<header>
-						<div class="container">
-							<h2>制作物</h2>
-						</div>
-					</header>
-				</div>
-			</section>
-
-			<section id="second" class="main">
-				<header>
-					<div class="container">
-						<h2>Euismod sed feugiat lorem tempus magna</h2>
-						<p>Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet consequat<br />
-						feugiat. Gravida dis placerat lectus ante vel nunc euismod eget ornare varius gravida euismod lorem ipsum dolor sit amet.</p>
-					</div>
-				</header>
-				<div class="content dark style2">
-					<div class="container">
-						<div class="row">
-							<div class="col-4 col-12-narrow">
-								<section>
-									<h3>Augue vivamus sed ipsum commodo lorem dolor</h3>
-									<p>Gravida dis placerat lectus ante vel nunc euismod est turpis sodales. Diam
-									tempor dui lacinia eget ornare varius gravida. Gravida dis placerat lectus ante
-									vel nunc euismod est turpis sodales. Diam tempor dui lacinia accumsan vivamus
-									augue cubilia vivamus nisi eu eget ornare varius gravida euismod.  Gravida dis
-									lorem ipsum dolor placerat magna tempus feugiat.</p>
-									<p>Lectus ante vel nunc euismod est turpis sodales. Diam tempor dui lacinia
-									accumsan vivamus augue cubilia vivamus nisi eu eget ornare varius gravida dolore
-									euismod lorem ipsum dolor.</p>
-									<footer>
-										<a href="#third" class="button scrolly">Accumsan nisi tempor</a>
-									</footer>
-								</section>
-							</div>
-							<div class="col-8 col-12-narrow">
-								<div class="row">
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic01.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a></div>
-									<div class="col-6"><a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a></div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section> -->
-
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
@@ -186,6 +147,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
 	</body>
 </html>
