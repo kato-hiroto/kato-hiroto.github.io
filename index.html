@@ -108,11 +108,15 @@
 			</div>
 			<script src="assets/js/siema.min.js"></script>
 			<script>
-				const mySiema = new Siema();
+				const mySiema = new Siema({duration: 500});
 				const items = ["ArioKart", "TMU", "DollyRun", "AddliBlocks", "KeyClickFarmer"];
 				Siema.prototype.addPagination = function() {
 					for (let i = 0; i < this.innerElements.length; i++) {
 						const btn = document.createElement('button');
+						// const btn = document.createElement('a');
+						// btn.classList.add("button");
+						// btn.classList.add("scrolly");
+						// btn.href = "#second";
 						btn.textContent = items[i];
 						btn.style.width = "170px";
 						btn.addEventListener('click', () => this.goTo(i));
