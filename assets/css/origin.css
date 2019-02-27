@@ -38,13 +38,13 @@ p.explain-align {
 .ar-left {
 	-webkit-transform: rotate(-135deg);
 	transform: rotate(-135deg);
-	float: left;
+	/* float: left; */
 }
 
 .ar-right {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
-	float: right;
+	/* float: right; */
 }
 
 @media screen and (max-width: 460px){
