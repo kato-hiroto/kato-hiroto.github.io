@@ -47,6 +47,12 @@ p.explain-align {
 	/* float: right; */
 }
 
+.inlineb {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 40%;
+}
+
 @media screen and (max-width: 460px){
 	.none {display:none}
 	.appear {display:inline-block}
