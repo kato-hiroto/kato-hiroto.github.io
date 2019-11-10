@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.261ba250.chunk.css",
+    "main.js": "./static/js/main.ecb5151c.chunk.js",
+    "main.js.map": "./static/js/main.ecb5151c.chunk.js.map",
+    "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
+    "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
+    "static/js/2.1d62bf6b.chunk.js": "./static/js/2.1d62bf6b.chunk.js",
+    "static/js/2.1d62bf6b.chunk.js.map": "./static/js/2.1d62bf6b.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.f66a4ffd1ab936f7af557d64c69303b9.js": "./precache-manifest.f66a4ffd1ab936f7af557d64c69303b9.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.261ba250.chunk.css.map": "./static/css/main.261ba250.chunk.css.map",
+    "static/media/hokan1.png": "./static/media/hokan1.0ef6ef5e.png",
+    "static/media/hokan2.png": "./static/media/hokan2.1b379c88.png",
+    "static/media/hokan3.png": "./static/media/hokan3.56ff9e94.png"
+  }
+}
